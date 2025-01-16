@@ -19,7 +19,8 @@ namespace Sigma.ApplicationTracking.Infrastructure.Data.Context
             modelBuilder.Entity<Applicant>(entity =>
             {
                 entity.ToTable("Applicants", "tracker");
-                entity.HasIndex(e => e.Email, "IDX_Applicants_Email");
+                entity.HasIndex(e => e.Email, "IDX_Applicants_Email")
+                      .IsUnique();
             });
         }
     }

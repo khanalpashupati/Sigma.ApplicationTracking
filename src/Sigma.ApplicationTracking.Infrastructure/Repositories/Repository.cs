@@ -35,8 +35,20 @@ namespace Sigma.ApplicationTracking.Infrastructure.Repositories
                 throw new Exception("An error occurred while getting bulk from the database.", ex);
             }
         }
+        public async Task<T> FindAsync(Expression<Func<T, bool>> filter)
+        {
+            try
+            {
+                return await _dbSet.FirstOrDefaultAsync(filter);
 
-        public async Task<T> GetByKeyAsync(object id)
+            }
+            catch (DbUpdateException ex)
+            {
+                throw new Exception("An error occurred while getting bulk from the database.", ex);
+            }
+        }
+
+        public async Task<T> GetByIdAsync(object id)
         {
             try
             {

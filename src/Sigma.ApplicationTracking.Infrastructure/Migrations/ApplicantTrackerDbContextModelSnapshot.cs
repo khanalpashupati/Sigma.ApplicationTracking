@@ -24,13 +24,20 @@ namespace Sigma.ApplicationTracking.Infrastructure.Migrations
 
             modelBuilder.Entity("Sigma.ApplicationTracking.Core.Entities.Applicant", b =>
                 {
-                    b.Property<string>("Email")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<string>("Comment")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
@@ -53,9 +60,10 @@ namespace Sigma.ApplicationTracking.Infrastructure.Migrations
                     b.Property<DateTime?>("PreferredTime")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("Email");
+                    b.HasKey("Id");
 
-                    b.HasIndex(new[] { "Email" }, "IDX_Applicants_Email");
+                    b.HasIndex(new[] { "Email" }, "IDX_Applicants_Email")
+                        .IsUnique();
 
                     b.ToTable("Applicants", "tracker");
                 });

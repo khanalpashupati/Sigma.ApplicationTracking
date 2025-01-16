@@ -5,6 +5,8 @@ namespace Sigma.ApplicationTracking.Core.Entities
     public class Applicant
     {
         [Key]
+        public long Id { get; set; }
+
         [StringLength(255)]
         public string Email { get; set; } = string.Empty;
 

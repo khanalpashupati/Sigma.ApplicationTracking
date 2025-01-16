@@ -19,6 +19,8 @@ namespace Sigma.ApplicationTracking.Infrastructure.Migrations
                 schema: "tracker",
                 columns: table => new
                 {
+                    Id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Email = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     FirstName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
@@ -29,14 +31,15 @@ namespace Sigma.ApplicationTracking.Infrastructure.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Applicants", x => x.Email);
+                    table.PrimaryKey("PK_Applicants", x => x.Id);
                 });
 
             migrationBuilder.CreateIndex(
                 name: "IDX_Applicants_Email",
                 schema: "tracker",
                 table: "Applicants",
-                column: "Email");
+                column: "Email",
+                unique: true);
         }
 
         /// <inheritdoc />
