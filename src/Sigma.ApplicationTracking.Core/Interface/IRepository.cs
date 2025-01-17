@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace Sigma.ApplicationTracking.Core.Interface
+namespace Sigma.ApplicationTracking.Domain.Interface
 {
     public interface IRepository<T> where T : class
     {

@@ -1,7 +1,7 @@
 ﻿using Sigma.ApplicationTracking.Application.DTOs;
 using Sigma.ApplicationTracking.Application.Interfaces.Services;
-using Sigma.ApplicationTracking.Core.Entities;
-using Sigma.ApplicationTracking.Core.Interface;
+using Sigma.ApplicationTracking.Domain.Entities;
+using Sigma.ApplicationTracking.Domain.Interface;
 
 
 namespace Sigma.ApplicationTracking.Application.Services

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Sigma.ApplicationTracking.Core.Entities
+namespace Sigma.ApplicationTracking.Domain.Entities
 {
     public class Applicant
     {
@@ -27,14 +27,5 @@ namespace Sigma.ApplicationTracking.Core.Entities
         public string Comment {  get; set; } = string.Empty;
 
 
-
-//• * First name
-//• * Last name
-//• Phone number
-//• * Email
-//• Time interval when it’s better to call(in case a call is needed)
-//• LinkedIn profile URL
-//• GitHub profile URL
-//• * Free text comment
     }
 }

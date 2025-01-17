@@ -1,7 +1,7 @@
-﻿using Sigma.ApplicationTracking.Core.Entities;
+﻿using Sigma.ApplicationTracking.Domain.Entities;
 
 
-namespace Sigma.ApplicationTracking.Core.Interface
+namespace Sigma.ApplicationTracking.Domain.Interface
 {
     public interface IUnitOfWork : IDisposable
     {

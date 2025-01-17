@@ -2,7 +2,7 @@
 using System.Linq.Expressions;
 using Microsoft.Data.SqlClient;
 using Sigma.ApplicationTracking.Infrastructure.Data.Context;
-using Sigma.ApplicationTracking.Core.Interface;
+using Sigma.ApplicationTracking.Domain.Interface;
 
 namespace Sigma.ApplicationTracking.Infrastructure.Repositories
 {

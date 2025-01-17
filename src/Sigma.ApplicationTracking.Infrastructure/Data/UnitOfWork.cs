@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage;
-using Sigma.ApplicationTracking.Core.Entities;
-using Sigma.ApplicationTracking.Core.Interface;
+using Sigma.ApplicationTracking.Domain.Entities;
+using Sigma.ApplicationTracking.Domain.Interface;
 using Sigma.ApplicationTracking.Infrastructure.Data.Context;
 using Sigma.ApplicationTracking.Infrastructure.Repositories;
 

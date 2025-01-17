@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sigma.ApplicationTracking.API", "src\Sigma.ApplicationTracking.API\Sigma.ApplicationTracking.API.csproj", "{C2FA75B7-CEB2-47F3-BC90-4823986E3469}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sigma.ApplicationTracking.Core", "src\Sigma.ApplicationTracking.Core\Sigma.ApplicationTracking.Core.csproj", "{CEC32751-9698-41FC-B248-C2D57CD52A1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sigma.ApplicationTracking.Domain", "src\Sigma.ApplicationTracking.Core\Sigma.ApplicationTracking.Domain.csproj", "{CEC32751-9698-41FC-B248-C2D57CD52A1B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sigma.ApplicationTracking.Infrastructure", "src\Sigma.ApplicationTracking.Infrastructure\Sigma.ApplicationTracking.Infrastructure.csproj", "{0CBD41C4-3206-41DC-BA9F-FB83EBCE3C2F}"
 EndProject
@@ -17,7 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6C5DF039-10F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sigma.ApplicationTracking.Application.Test", "tests\Sigma.ApplicationTracking.Application.Test\Sigma.ApplicationTracking.Application.Test.csproj", "{C1A38DCB-F413-4F0C-938C-72C2D048E318}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigma.ApplicationTracking.API.Test", "tests\Sigma.ApplicationTracking.API.Test\Sigma.ApplicationTracking.API.Test.csproj", "{E5259A43-AB06-40C3-BEDD-AADB70086955}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sigma.ApplicationTracking.API.Test", "tests\Sigma.ApplicationTracking.API.Test\Sigma.ApplicationTracking.API.Test.csproj", "{E5259A43-AB06-40C3-BEDD-AADB70086955}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigma.ApplicationTracking.Domain.Test", "tests\Sigma.ApplicationTracking.Domain.Test\Sigma.ApplicationTracking.Domain.Test.csproj", "{0AC74117-416E-462A-A2DB-17588B8F09CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{E5259A43-AB06-40C3-BEDD-AADB70086955}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5259A43-AB06-40C3-BEDD-AADB70086955}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5259A43-AB06-40C3-BEDD-AADB70086955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AC74117-416E-462A-A2DB-17588B8F09CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC74117-416E-462A-A2DB-17588B8F09CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC74117-416E-462A-A2DB-17588B8F09CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC74117-416E-462A-A2DB-17588B8F09CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{8C0FFCBF-94E3-4968-A956-0DCA0D4378B9} = {6C5DF039-10F0-4291-996A-19B4C69BECE8}
 		{C1A38DCB-F413-4F0C-938C-72C2D048E318} = {D40A0727-1C4A-4527-B744-3F1836690C08}
 		{E5259A43-AB06-40C3-BEDD-AADB70086955} = {D40A0727-1C4A-4527-B744-3F1836690C08}
+		{0AC74117-416E-462A-A2DB-17588B8F09CA} = {D40A0727-1C4A-4527-B744-3F1836690C08}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {433D1DAB-FF8C-4714-AAC9-98CCD11DEC46}

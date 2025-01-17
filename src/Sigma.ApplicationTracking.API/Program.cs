@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Sigma.ApplicationTracking.Application.Interfaces.Services;
 using Sigma.ApplicationTracking.Application.Services;
-using Sigma.ApplicationTracking.Core.Interface;
+using Sigma.ApplicationTracking.Domain.Interface;
 using Sigma.ApplicationTracking.Infrastructure.Data;
 using Sigma.ApplicationTracking.Infrastructure.Data.Context;
 using Sigma.ApplicationTracking.Infrastructure.Repositories;

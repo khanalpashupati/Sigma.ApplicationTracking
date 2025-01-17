@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Sigma.ApplicationTracking.Core.Entities;
+using Sigma.ApplicationTracking.Domain.Entities;
 
 namespace Sigma.ApplicationTracking.Infrastructure.Data.Context
 {
