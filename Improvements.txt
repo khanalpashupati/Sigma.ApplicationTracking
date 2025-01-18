@@ -13,3 +13,5 @@ The following areas can be enhanced to improve functionality and scalability:
 
     Bulk Operations:
         Implement bulk operations for creating or updating multiple candidate records at once. This can significantly enhance performance for large datasets.
+    Pagination:
+        Pagination needs to be implemented for retrival of data from the database.
